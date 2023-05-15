@@ -1,3 +1,135 @@
+:root {
+    --niveau-1: 20px;
+    --niveau-2: 40px;
+    --niveau-3: 60px;
+    --niveau-4: 80px;
+    --niveau-5: 100px;
+
+    --niveau-1-color: red;
+    --niveau-2-color: orange;
+    --niveau-3-color: yellow;
+    --niveau-4-color: rgb(152, 233, 152);
+    --niveau-5-color: green;
+  }
+  
 *{
     font-family: Arial, Helvetica, sans-serif;
+}
+
+html, body{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background: rgb(248, 246, 246);
+    box-shadow: 0px 5px 5px grey;
+    padding:  0 5%  0 5%;
+}
+
+.Profil{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 80vh;
+    padding:3vh 3% 5vh 3% ;
+}
+
+h2{
+    margin: 5px;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+fieldset{
+    border-radius: 15px;
+    border: none;
+    background: rgb(248, 246, 246);
+    box-shadow: -5px 5px 5px grey;
+}
+
+.info, .skills, .Langues, .softwares, .hobbies, .quality{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1vh 50px 1vh 50px ;
+    align-items: center;
+}
+
+legend{
+    font-size: large;
+    font-weight: bold;
+}
+
+fieldset > div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 33%;
+    justify-content: center;
+}
+
+fieldset > div > div{
+    margin-left: 2%;
+}
+
+.quality, .hobbies{
+    width: 42%;
+}
+
+.Langues{
+    width: 70%;
+    padding: 10px;
+}
+
+.softwares{
+    width: 30%;
+    padding: 10px;
+}
+
+.progressBar-Wrapper{
+    width: 100px;
+    height: 10px;
+    border-radius: 15px;
+    border: solid 1px black;
+}
+
+.progressBar-lvl1{
+    width:  var(--niveau-1);
+    height: 10px;
+    border-radius: 15px;
+    background-color: var(--niveau-1-color);
+}
+.progressBar-lvl2{
+    width:  var(--niveau-2);
+    height: 10px;
+    border-radius: 15px;
+    background-color: var(--niveau-2-color);
+}
+.progressBar-lvl3{
+    width:  var(--niveau-3);
+    height: 10px;
+    border-radius: 15px;
+    background-color: var(--niveau-3-color);
+}
+.progressBar-lvl4{
+    width:  var(--niveau-4);
+    height: 10px;
+    border-radius: 15px;
+    background-color: var(--niveau-4-color);
+}
+.progressBar-lvl5{
+    width:  var(--niveau-5);
+    height: 10px;
+    border-radius: 15px;
+    background-color: var(--niveau-5-color);
 }
