@@ -21,11 +21,12 @@ html, body{
     padding: 0;
 }
 
-
 .container {
     width: 100%;
     overflow-x: hidden;
     white-space: nowrap;
+    position:absolute;
+    bottom: 0;
   }
   
   .content {
@@ -58,7 +59,6 @@ header{
     height: 80vh;
     padding:3vh 3% 5vh 3% ;
     width: 100vw;
-    bottom: 0;
 }
 
 h2{
