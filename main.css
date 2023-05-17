@@ -45,19 +45,27 @@ header{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background: rgb(248, 246, 246);
+    background: rgb(0, 0, 0);
     box-shadow: 0px 5px 5px grey;
     padding:  0 5vw  0 5vw;
     position: fixed;
     width: 90vw;
+    color: white;
 }
 
+#links{
+    width: 30vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
 #Profil, #Education, #Work{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 80vh;
-    padding:3vh 3% 5vh 3% ;
+    height: 84vh;
+    padding:1vh 3% 5vh 3% ;
     width: 100vw;
 }
 
@@ -72,10 +80,9 @@ h2{
 }
 
 fieldset{
-    border-radius: 15px;
     border: none;
-    background: rgb(248, 246, 246);
-    box-shadow: -5px 5px 5px grey;
+   border-left: solid 5px;
+   border-top: solid 1px;
 }
 
 .info, .skills, .Langues, .softwares, .hobbies, .quality{
@@ -104,16 +111,16 @@ fieldset > div > div{
 }
 
 .quality, .hobbies{
-    width: 42%;
+    width: 40%;
 }
 
 .Langues{
-    width: 70%;
+    width: 58%;
     padding: 10px;
 }
 
 .softwares{
-    width: 30%;
+    width: 35%;
     padding: 10px;
 }
 
@@ -183,6 +190,54 @@ fieldset > div > div{
     border-color: rgb(175, 175, 175);
 }
 
-a{
-    text-decoration: none;
+a:link,
+a:visited {
+  color: #fff; 
+  text-decoration: none; 
+}
+
+a:hover{
+    font-size: large;
+}
+
+#CIT, #Metex{
+    width: 50vw;
+    height: 30vh;
+}
+
+#CIT{
+    margin-left: 30vw;
+    border:none;
+    border-right: solid 5px;
+    border-top: solid 1px;
+}
+
+#CIT legend{
+    margin-left: 45vw;
+}
+
+#CIT > div, #Metex > div{
+    display: flex;
+    width: auto;
+    height: 30vh ;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.TextArea{
+    height: 20vh;
+    width: 30vw;
+    border-left: solid 2px;
+    margin: 5vh;
+    padding: 2vh 3vw 2vh 3vw;
+}
+
+img{
+    width: 150px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+#Metex img{
+    border-radius: 50%;
 }
