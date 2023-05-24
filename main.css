@@ -88,6 +88,7 @@ header *, header > div > a{
     align-items: center;
     box-shadow: -5px 5px 25px rgba(0, 0, 0, 0.4);
     transform: perspective(850px) rotateX(10deg) rotateY(-10deg);
+    margin-left: -15vh;
 }
 
 #Contact-Wrapper{
