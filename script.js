@@ -21,9 +21,11 @@ function scrollRight() {
 }
 
 function scrollDroite() {
-  window.scrollTo({
-    top: 0,
-    left: document.body.scrollWidth,
-    behavior: 'auto'
+  var largeurEcran = window.innerWidth;
+  const container = document.querySelector('.container');
+  const scrollAmount = container.scrollLeft + 4*largeurEcran; 
+  container.scrollTo({
+    left: scrollAmount,
+    behavior: 'smooth'
   });
 }

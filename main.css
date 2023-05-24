@@ -51,11 +51,10 @@ header{
     padding:  0 5vw  0 5vw;
     position: fixed;
     width: 90vw;
-    color: white;
     color:#00eaff;
 }
 
-header h1, header h3 {
+header *, header > div > a{
     color:#00eaff;
 }
 
@@ -84,8 +83,8 @@ header h1, header h3 {
 #Contact-Wrapper{
     padding:50px 75px 50px 75px ;
     background: rgb(225, 225, 225);
-    border-radius: 5%;
-    border: solid 2px;
+    padding: 50px 75px 50px 75px;
+    background: #021c3f;
 }
 
 input, textarea {
@@ -238,11 +237,11 @@ fieldset > div > div{
 
 a:link,
 a:visited {
-  color: #fff; 
+  color: #00eaff; 
   text-decoration: none; 
 }
 
-a:hover{
+a:hover, header label:hover{
     font-size: large;
 }
 
