@@ -76,15 +76,50 @@ header *, header > div > a{
 
 #ContactMe{
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
 }
 
+#ContactMe > div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    box-shadow: -5px 5px 25px rgba(0, 0, 0, 0.4);
+    transform: perspective(850px) rotateX(10deg) rotateY(-10deg);
+}
+
 #Contact-Wrapper{
-    padding:50px 75px 50px 75px ;
-    background: rgb(225, 225, 225);
-    padding: 50px 75px 50px 75px;
     background: #021c3f;
+    height: 60vh;
+    display: flex;
+    width: 30vw;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+  }
+
+  #Contact-Wrapper label, #Contact-Wrapper i, #Contact-Wrapper h2{
+    color: #00eaff;
+  }
+
+.ContactList{
+    background-color: aliceblue;
+    display: flex;
+    height: auto;
+    height: 40vh;
+    display: flex;
+    width: 30vw;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10vh 0 10vh 0;
+}
+
+.ContactList a:visited{
+    color: #021c3f;
 }
 
 input, textarea {
