@@ -19,3 +19,11 @@ function scrollRight() {
     behavior: 'smooth' 
   });
 }
+
+function scrollDroite() {
+  window.scrollTo({
+    top: 0,
+    left: document.body.scrollWidth,
+    behavior: 'auto'
+  });
+}
