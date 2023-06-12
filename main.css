@@ -368,3 +368,29 @@ img{
     width: 50vw;
     margin-left: 35vw;
 }
+
+@media screen and (max-width: 767px) {
+     #links{
+        display: none;
+     }
+     .info, .skills, .Langues, .softwares, .hobbies, .quality {
+        display: block;
+     }
+     .container{
+        white-space: inherit;
+     }
+
+     .wrapper{
+        display: block;
+     }
+
+     .info, .skills, .Langues, .softwares, .hobbies, .quality{
+        padding: 0;
+        padding-left: 10px;
+     }
+
+     .skills > div{
+        justify-content: left;
+        
+     }
+  }
